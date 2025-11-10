@@ -44,6 +44,7 @@ import { ProductList } from "./features/products/components/ProductList";
 import { ShopPage } from "./features/products/Shop";
 import { CollectionPage } from "./features/products/CollectionPage";
 import { PolitiqueConfidentialite } from "./pages/PolitiqueConfidentialite";
+import { MentionsLegales } from "./features/mentions/MentionsLegales";
 
 function App() {
   const isAuthChecked = useSelector(selectIsAuthChecked);
@@ -89,6 +90,8 @@ function App() {
         <Route path="/collection/:type" element={<Protected><CollectionPage /></Protected>} />
         <Route path="/boutique" element={<ShopPage />} />
         <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+        <Route path="/mentions" element={<MentionsLegales />} />
+
 
         {/* {
           loggedInUser?.isAdmin?( */}

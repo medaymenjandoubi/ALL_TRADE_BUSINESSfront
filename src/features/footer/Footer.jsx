@@ -114,6 +114,9 @@ export const Footer = () => {
   <Typography sx={textStyle} onClick={() => navigate("/politique-confidentialite")}>
     Politique de confidentialité
   </Typography>
+    <Typography sx={textStyle} onClick={() => navigate("/mentions")}>
+    Mentions Légales
+  </Typography>
           </Stack>
 
           {/* ACCOUNT / CLIENT */}
