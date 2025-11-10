@@ -88,10 +88,10 @@ export const Footer = () => {
               Adresse : 6 Rue de la Grange, 91330 Yerres
             </Typography>
             <Typography variant="body2" sx={{ lineHeight: 1.6 }}>
-              Téléphone : +33 6 12 34 56 78
+              Téléphone : {process.env.REACT_APP_CONTACT_NUMBER}
             </Typography>
             <Typography variant="body2" sx={{ lineHeight: 1.6 }}>
-              Email : contact@amicaldistribution.fr
+              Email : {process.env.REACT_APP_CONTACT_EMAIL}
             </Typography>
             <Typography variant="body2" sx={{ lineHeight: 1.6 }}>
               RCS Évry 934 737 974

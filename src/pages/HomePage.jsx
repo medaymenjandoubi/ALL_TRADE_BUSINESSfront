@@ -22,7 +22,7 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { FeaturedMateriauxCarousel, FeaturedProductsCarousel } from "../features/products/components/FeaturedProducts";
 import { motion } from "framer-motion";
 import { ProductList } from "../features/products/components/ProductList";
-import { selectCategories } from "../features/categories/CategoriesSlice";
+import { fetchAllCategoriesAsync, selectCategories } from "../features/categories/CategoriesSlice";
 import { WoodProducts } from "../features/products/components/WoodProducts.jsx";
 
 export const HomePage = () => {
@@ -39,7 +39,7 @@ export const HomePage = () => {
   useEffect(() => {
     if (!products || products.length === 0) {
       dispatch(fetchProductsAsync(filters));
-      
+      dispatch(fetchAllCategoriesAsync())
     }
   }, [filters]);
 
